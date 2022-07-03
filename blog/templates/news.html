@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}news{% endblock title %}
+{% block content %}
+<div class="news">
+    {% for i in data_ne %}
+    <div class="card">
+        <img src="/media/{{i.n_img}}" alt="John" >
+        <h2>{{i.n_title}}</h2>
+        <p>{{i.n_des}}
+        </p>
+        <a class="event_but" href="{% url 'news_d' i.n_slug %}">More</a>
+      </div>
+    </div>
+    {% endfor %}
+      {% endblock content %}

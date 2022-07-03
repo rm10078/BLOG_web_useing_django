@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}events{% endblock title %}
+{% block content %}
+<div>
+{% for i in data_ev reversed %}
+<div class="card">
+  <img src="/media/{{i.ev_img}}" alt="John" >
+  <h2>{{i.ev_title}}</h2>
+  <p>{{i.ev_des}}</p>
+  <a class="event_but" href="{% url 'event_d' i.ev_slug %}">More</a>
+</div>
+{% endfor %}
+</div>
+{% endblock content %}

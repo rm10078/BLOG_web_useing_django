@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}{{data.title}}{% endblock title %}
+{% block content %}
+<div class="post_di">
+<img src="media/{{data.image}}" alt="" srcset="">
+<div class="td">
+<h2>{{data.title}}</h2>
+<h4>{{data.des}}</h4>
+</div>
+<div class="cont_di">{{data.content|safe}}</div>
+<small>{{data.upload_at}}</small>
+</div>
+{% endblock content %}

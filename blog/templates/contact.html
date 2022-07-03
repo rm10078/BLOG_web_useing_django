@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock title %}
+{% block content %}
+<header>
+    <form class="cont_f" action="/contact/" method="post">
+        {% csrf_token %}
+        <h2>Contact form 📞</h2>
+        <h4>Your name:</h4>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <h4>Email:</h4>
+        <input type="email" name="email" id="email" placeholder="abcd@gaim.com">
+        <h4>Phone number:</h4>
+        <input type="text" name="phone" id="phone" placeholder="+91xxxxxxxxxx">
+        <h4>Des:</h4>
+        <input type="text" name="desc" id="text_c">
+        <button type="submit">Submit</button>
+    </form>
+    {% if tem %}
+    <div class="warn_div">
+    <h4 class="warn">Sumit successfully.👍</h4>
+    </div>
+    {% endif %}
+ </header>
+{% endblock content %}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sty.css' %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="/" class="active"><b>Title</b>Title</a>
+            <a href="/news"><b>News</b></a>
+            <a href="/event">Event</a>
+            <a href="/contact">Contact us</a>
+            <a href="/about">About</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="{% static 'icon/nav.png' %}" width="15vw" height="15vw" alt="" srcset="">
+            </a>
+
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="side_con">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="{% static 'images/p1.jpg' %}" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="{% static 'images/p2.jpg' %}" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="{% static 'images/p3.jpg' %}" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                
+
+
+
+                </div>
+            </div>
+        </div>
+        {% block content %}{% endblock content %}
+    </header>
+
+    <footer>
+        <div class="footer">
+            <div class="ft_1">
+                <h2>Footer content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis, voluptates porro tenetur magni id et tempore molestiae officia laudantium ullam officiis sapiente ad nisi eum dolores cum laborum. Eaque et modi totam officia commodi amet corrupti, veritatis nesciunt quia magnam ex expedita quas at maiores assumenda quis temporibus id harum quisquam, in reprehenderit sapiente est. Nisi impedit sint fugiat. Asperiores perferendis ipsa natus necessitatibus aut! Rem tempora adipisci doloremque temporibus sed facere recusandae. Similique iusto illo nisi aperiam hic distinctio aut ipsa sit, incidunt corporis dolores eius quidem deserunt tempora, culpa consectetur porro quia vitae sequi praesentium. Sapiente pariatur quis quod culpa quidem, reprehenderit soluta dignissimos dolores eius voluptatibus? Perspiciatis illo quod minus voluptate consequuntur cumque temporibus magni at voluptas laudantium harum sed earum id quam delectus neque unde necessitatibus sunt maiores placeat, facere exercitationem iure quibusdam odit. Aliquam dicta laudantium nam sint at ab excepturi nesciunt libero aliquid quas, itaque consequuntur, harum, placeat eaque velit. Sunt excepturi fugiat quae esse dignissimos, omnis error provident doloremque eius voluptatem qui, nam, beatae est animi? Illum et sit facilis beatae tempore, incidunt eveniet quam exercitationem enim rerum recusandae totam id laborum cumque praesentium! Distinctio sed voluptatem numquam similique magnam eveniet dolorum!
+                </p>
+            </div>
+            <div class="ft_2">
+                <h2>Other Link</h2>
+                <a class="ft_2_a" href="">Facebook</a>
+                <a class="ft_2_a" href="">Youtube</a>
+                <a class="ft_2_a" href="">Twitter</a>
+                <a class="ft_2_a" href="">Github</a>
+            </div>
+            <biv class="end_div">
+                <h4>copyright</h4>
+            </biv>
+    </footer>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+
+</html>

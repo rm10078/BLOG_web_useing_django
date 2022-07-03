@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Home page{% endblock title %}
+{% block content %}
+
+<div class="content">
+    <h2>All post</h2>
+    {% for i in data reversed %}
+    
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="/media/{{i.image}}" width="95%" height="70%" alt="" srcset="">
+                <h2>{{i.title}}</h2>
+                <p>{{i.des}}</p>
+            </div>
+            <div class="flip-box-back">
+                <h2>Back Side</h2>
+                <p>{{i.bdes}}</p>
+                <a class="but" href="{% url 'post_d' i.slug %}">Lern more</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock content %}
