@@ -7,10 +7,13 @@
 
 ## This is a small project. I try to make my own website useing python.
 
+## About Project
+I use Django for backend. I use HTML,CSS & JS for frontend. I am not use any framework for frontend.
+(In future i try to use react for frontend)
+In database i use sqlite. I make four table for store data.( 1.Blogpost, 2.Event, 3.News, 4.Contact )
 
+## All screenshot 
 
-## The pico_setup.sh also available in this repo
-You can direct run the pico_setup.sh
 ## Home page
 
 ![App Screenshot](https://github.com/rm10078/BLOG_web_useing_django/blob/main/images/Home%20page.png?raw=true)
@@ -50,4 +53,7 @@ You can direct run the pico_setup.sh
 ![App Screenshot](https://github.com/rm10078/BLOG_web_useing_django/blob/main/images/content.png?raw=true)
 
 
+## About me
+I am a B.tech(2nd year Applied Electronics and Instrumentation Engineering) student. I completed my diploma from murshidabad institute of technology (2021). Now i am a student of Haldia institute of technology. 
 
+----Thank You---- 
