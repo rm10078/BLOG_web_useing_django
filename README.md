@@ -33,7 +33,7 @@ In database i use sqlite. I make four table for store data.( 1.Blogpost, 2.Event
 
 ## Submit Contact page
 
-![App Screenshot](https://github.com/rm10078/BLOG_web_useing_django/blob/main/images/sub_Contact.png?raw=true)
+![App Screenshot](https://github.com/rm10078/BLOG_web_useing_django/blob/main/images/submit_contact.png?raw=true)
 
 
 ## About page
