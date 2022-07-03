@@ -1,5 +1,5 @@
 
-# 📒Django base blog web
+# 📒Django base blog website
 
 
 
