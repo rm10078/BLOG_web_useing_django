@@ -10,7 +10,8 @@
 ## About Project
 I use Django for backend. I use HTML,CSS & JS for frontend. I am not use any framework for frontend.
 (In future i try to use react for frontend)
-In database i use sqlite. I make four table for store data.( 1.Blogpost, 2.Event, 3.News, 4.Contact )
+In database i use sqlite. I make four table for store data.( 1.Blogpost, 2.Event, 3.News, 4.Contact ).
+Only admin can post. Anyone can not post but can read all post.
 
 ## All screenshot 
 
