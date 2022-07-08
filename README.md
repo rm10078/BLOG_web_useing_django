@@ -49,7 +49,7 @@ Only admin can post. Anyone can not post but can read all post.
 
 ![App Screenshot](https://github.com/rm10078/BLOG_web_useing_django/blob/main/images/Travel%20is%20good%20for%20your%20health%20Change%20blogpost%20All%20data%20store%20here.png?raw=true)
 
-## About page
+## Post details page
 
 ![App Screenshot](https://github.com/rm10078/BLOG_web_useing_django/blob/main/images/content.png?raw=true)
 
